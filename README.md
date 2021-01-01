@@ -98,3 +98,48 @@ on property:sys.boot_completed=1
     exec u:r:shell:s0 shell shell input log adb sdcard_rw sdcard_r net_bt_admin net_bt inet net_bw_stats -- /system/bin/sh /system/bin/settings put global device_provisioned 1
     exec u:r:shell:s0 shell shell input log adb sdcard_rw sdcard_r net_bt_admin net_bt inet net_bw_stats -- /system/bin/sh /system/bin/settings put secure user_setup_complete 1
 ```
+
+
+
+
+Replace ```/etc/mkshrc```
+
+```shell 
+# Copyright (c) 2010, 2012, 2013, 2014
+#	Thorsten Glaser <tg@mirbsd.org>
+# This file is provided under the same terms as mksh.
+#-
+# Minimal /system/etc/mkshrc for Android
+#
+# Support: https://launchpad.net/mksh
+alias cb1='echo 1 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness'
+alias cb2='echo 2 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness'
+alias cb3='echo 3 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness'
+alias cb4='echo 4 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness'
+alias cb5='echo 5 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness'
+alias cb6='echo 6 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness'
+alias cb7='echo 7 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness'
+alias cb8='echo 8 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness'
+alias cb9='echo 9 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness'
+
+alias b1='/sbin/su -c  "echo 1 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
+alias b2='/sbin/su -c  "echo 2 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
+alias b3='/sbin/su -c  "echo 3 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
+alias b4='/sbin/su -c  "echo 4 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
+alias b5='/sbin/su -c  "echo 5 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
+alias b6='/sbin/su -c  "echo 6 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
+alias b7='/sbin/su -c  "echo 7 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
+alias b8='/sbin/su -c  "echo 8 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
+alias b9='/sbin/su -c  "echo 9 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
+
+
+if (( USER_ID )); then PS1='$'; else PS1='#'; fi
+PS4='[$EPOCHREALTIME] '; PS1='${|
+	local e=$?
+
+	(( e )) && REPLY+="$e|"
+
+	return $e
+}$HOSTNAME:${PWD:-?} '"$PS1 "
+
+```
