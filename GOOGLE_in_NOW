@@ -1,0 +1,8 @@
+package:/system/priv-app/GoogleExtServices/GoogleExtServices.apk=com.google.android.ext.services
+package:/system/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk=com.google.android.onetimeinitializer
+package:/system/app/GoogleExtShared/GoogleExtShared.apk=com.google.android.ext.shared
+package:/system/priv-app/ConfigUpdater/ConfigUpdater.apk=com.google.android.configupdater
+package:/data/app/com.google.android.webview-GTsuODZauozuWdtKP0lJqg==/base.apk=com.google.android.webview
+package:/system/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk=com.google.android.syncadapters.contacts
+package:/system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk=com.google.android.packageinstaller
+package:/system/app/GmsEEAType4cIntegration/GmsEEAType4cIntegration.apk=com.google.android.gmsintegration

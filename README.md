@@ -143,3 +143,11 @@ PS4='[$EPOCHREALTIME] '; PS1='${|
 }$HOSTNAME:${PWD:-?} '"$PS1 "
 
 ```
+adb shell su -c dd if=/dev/block/mmcblk0p30 of=/storage/emulated/0/use_me_mmcblk0p30-11-dec-2020.img
+adb shell su -c dd if=/dev/block/mmcblk0p30 of=/storage/emulated/0/x19-mmcblk0p30-28-12-2020.img
+
+
+echo 1 >    /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
+
+Stopping service due to app idle
+
