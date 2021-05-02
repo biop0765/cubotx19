@@ -5,15 +5,15 @@
 # Minimal /system/etc/mkshrc for Android
 #
 # Support: https://launchpad.net/mksh
-alias b1='/sbin/su -c  "echo 1 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
-alias b2='/sbin/su -c  "echo 2 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
-alias b3='/sbin/su -c  "echo 3 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
-alias b4='/sbin/su -c  "echo 4 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
-alias b5='/sbin/su -c  "echo 5 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
-alias b6='/sbin/su -c  "echo 6 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
-alias b7='/sbin/su -c  "echo 7 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
-alias b8='/sbin/su -c  "echo 8 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
-alias b9='/sbin/su -c  "echo 9 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"'
+alias b1='/sbin/su -c  "echo 1 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"; exit 0'
+alias b2='/sbin/su -c  "echo 2 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"; exit 0'
+alias b3='/sbin/su -c  "echo 3 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"; exit 0'
+alias b4='/sbin/su -c  "echo 4 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"; exit 0'
+alias b5='/sbin/su -c  "echo 5 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"; exit 0'
+alias b6='/sbin/su -c  "echo 6 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"; exit 0'
+alias b7='/sbin/su -c  "echo 7 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"; exit 0'
+alias b8='/sbin/su -c  "echo 8 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"; exit 0'
+alias b9='/sbin/su -c  "echo 9 > /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"; exit 0'
 
 
 if (( USER_ID )); then PS1='$'; else PS1='#'; fi
