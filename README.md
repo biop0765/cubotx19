@@ -1,5 +1,12 @@
 ### cubotp20
 
+#### root
+
+```shell
+adb shell su -c mount -o rw,remount /
+```
+
+#### enable user setup complete. See last 2 lines of bootstat.rc 
 #### dd the system
 
 ```shell
